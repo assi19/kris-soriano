@@ -78,29 +78,14 @@ nav ul li a:hover::after{
     transition: transform 0.3s ease-in-out;
 }
 .header-text h1 span:hover{
-    animation: floatAnimation 2s infinite alternate;
+    animation: floatAnimation 1s infinite alternate;
 }
 @keyframes floatAnimation {
     to {
         transform: translateY(-10px); /* Adjust the distance the text floats */
     }
 }
-@keyframes floatAnimation {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px); /* Adjust the distance the logo floats */
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 
-.logo {
-    display: inline-block;
-    animation: floatAnimation 2s infinite;
-}
 
 /* --------------------about-----------------------*/
 
