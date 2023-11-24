@@ -85,22 +85,6 @@ nav ul li a:hover::after{
         transform: translateY(-10px); /* Adjust the distance the text floats */
     }
 }
-@keyframes floatAnimation {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px); /* Adjust the distance the logo floats */
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.logo {
-    display: inline-block;
-    animation: floatAnimation 2s infinite;
-}
 
 /* --------------------about-----------------------*/
 
