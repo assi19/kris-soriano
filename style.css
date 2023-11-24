@@ -44,6 +44,11 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
+nav ul li a:hover {
+    transform: translateY(-5px);
+    transition: .5s;
+    display: inline-block;
+}
 nav ul li a::after{
     content: '';
     width: 0%;
@@ -52,7 +57,7 @@ nav ul li a::after{
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 nav ul li a:hover::after{
     width: 100%;
@@ -69,8 +74,33 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color: #3380FF;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+.header-text h1 span:hover{
+    animation: floatAnimation 2s infinite alternate;
+}
+@keyframes floatAnimation {
+    to {
+        transform: translateY(-10px); /* Adjust the distance the text floats */
+    }
+}
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the distance the logo floats */
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
+.logo {
+    display: inline-block;
+    animation: floatAnimation 2s infinite;
+}
 
 /* --------------------about-----------------------*/
 
@@ -115,6 +145,17 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    border-radius: 5px;
+    color: white;
+    padding: 2px 7px;
+    border: 3px solid #3380FF;
+
+}
+.tab-links:hover {
+    color: #3380FF;
+    transform: translateY(-5px);
+    transition: .5s;
+    background-color: #262626;
 }
 .tab-links::after{
     content: '';
@@ -127,7 +168,7 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 .tab-contents ul li{
     list-style: none;
@@ -295,7 +336,13 @@ nav ul li a:hover::after{
 .btn.btn2 {
     display: inline-block;
     background: #3380FF;
+    
 }
+.btn.btn2:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s;
+}
+
 .contact-right form {
     width: 100%;
 }
