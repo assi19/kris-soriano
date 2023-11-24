@@ -57,7 +57,7 @@ nav ul li a::after{
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.1s;
+    
 }
 nav ul li a:hover::after{
     width: 100%;
@@ -85,7 +85,22 @@ nav ul li a:hover::after{
         transform: translateY(-10px); /* Adjust the distance the text floats */
     }
 }
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the distance the logo floats */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
+.logo {
+    display: inline-block;
+    animation: floatAnimation 2s infinite;
+}
 
 /* --------------------about-----------------------*/
 
