@@ -46,7 +46,7 @@ nav ul li a{
 }
 nav ul li a:hover {
     transform: translateY(-5px);
-    transition: .5s;
+    transition: .3s;
     display: inline-block;
 }
 nav ul li a::after{
@@ -57,7 +57,7 @@ nav ul li a::after{
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 nav ul li a:hover::after{
     width: 100%;
